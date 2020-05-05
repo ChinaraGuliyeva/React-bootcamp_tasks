@@ -7,15 +7,17 @@ import Navigation from "./Navigation";
 import Dice from "./state_tasks/Dice.js";
 import Header from './Header';
 import Menu from "./event_tasks/Menu";
-import UserLogin  from './UserLogin';
+import UserLogin  from './event_tasks/UserLogin';
 import Cards from "./Cards";
 import Management from "./Management";
-import Brotherhood from './Brotherhood';
+import Brotherhood from './lists/Brotherhood';
 import ClassWork from './ClassWork';
-import UserNameInput from "./UserNameInput";
-import Dropdowns from "./Dropdowns";
-import Modals from './Modals';
-import Counter from "./Counter";
+import UserNameInput from "./conditional/UserNameInput";
+import Dropdowns from "./conditional/Dropdowns";
+import Modals from './conditional/Modals';
+import Counter from "./lists/Counter";
+import Form from './ready/Form';
+import Mortgage from "./forms/Mortgage";
 
 class App extends Component {
   render() {
@@ -40,6 +42,8 @@ ReactDOM.render(
     <Route path="/drop" component={Dropdowns} />
     <Route path="/modal" component={Modals} />
     <Route path="/counter" component={Counter} />
+    <Route path="/styled" component={Form} />
+    <Route path="/mortgage" component={Mortgage} />
   </BrowserRouter>,
   document.getElementById('root')
 );
