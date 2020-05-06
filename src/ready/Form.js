@@ -17,16 +17,29 @@ const Input=styled.input`
 
 class Form extends Component{
     state = {
-        visible: false
+        visible: false,
+        value: ""
     }
     showModal = () => {
-        this.setState({ visible: true })
+        this.setState({ visible: true });
+
     }
+    handleChange = event => this.setState({ value: event.target.value });
+
+    clearData = (param) => {
+        this.setState({ value: param });
+        this.setState({ visible: false });
+    };
+    cancel = () =>{
+        this.setState({ visible: false });
+    }
+
     render(){
+        console.log(this.state.value);
         return<Container >
-            <Input type="text" />
+            <Input type="text" value={this.state.value} onChange={this.handleChange} />
             <button tyle='button' onClick={this.showModal}>Очистить</button>
-            <Styled visible={this.state.visible} />
+            <Styled clearData={this.clearData} cancel={this.cancel} visible={this.state.visible} />
         </Container>
     }
 }

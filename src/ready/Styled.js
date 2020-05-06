@@ -25,12 +25,15 @@ const Button = styled.button`
 `;
 
 class Styled extends Component {
+    state={
+        value: ""
+    }
     render() {
         return <Modal className={this.props.visible === false ? "hide" : "show"}>
             <p>Вы уверены, что хотите стереть текст?</p>
             <ButtonsContainer>
-                <Button>ОК</Button>
-                <Button>Отмена</Button>
+                <Button onClick={() =>{this.props.clearData(this.state.value)}}>ОК</Button>
+                <Button onClick={() =>{this.props.cancel()}} >Отмена</Button>
         </ButtonsContainer>
         </Modal>
     }
