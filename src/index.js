@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import { Route, BrowserRouter } from 'react-router-dom';
 
 import Navigation from "./Navigation";
@@ -18,6 +17,9 @@ import Modals from './conditional/Modals';
 import Counter from "./lists/Counter";
 import Form from './ready/Form';
 import Mortgage from "./forms/Mortgage";
+import Antd from './ready/Antd';
+
+import './index.css';
 
 class App extends Component {
   render() {
@@ -42,8 +44,9 @@ ReactDOM.render(
     <Route path="/drop" component={Dropdowns} />
     <Route path="/modal" component={Modals} />
     <Route path="/counter" component={Counter} />
-    <Route path="/styled" component={Form} />
     <Route path="/mortgage" component={Mortgage} />
+    <Route path="/styled" component={Form} />
+    <Route path="/antd" component={Antd} />
   </BrowserRouter>,
   document.getElementById('root')
 );

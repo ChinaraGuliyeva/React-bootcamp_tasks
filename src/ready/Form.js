@@ -8,6 +8,10 @@ const Container =styled.div`
     flex-direction: column;
     padding: 20px;
     width: 200px;
+
+    &:hover {
+    color:red
+    }
 `;
 
 const Input=styled.input`
@@ -27,8 +31,7 @@ class Form extends Component{
     handleChange = event => this.setState({ value: event.target.value });
 
     clearData = (param) => {
-        this.setState({ value: param });
-        this.setState({ visible: false });
+        this.setState({ value: param, visible: false });
     };
     cancel = () =>{
         this.setState({ visible: false });
