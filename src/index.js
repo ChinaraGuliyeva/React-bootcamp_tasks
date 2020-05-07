@@ -18,6 +18,7 @@ import Counter from "./lists/Counter";
 import Form from './ready/Form';
 import Mortgage from "./forms/Mortgage";
 import Antd from './ready/Antd';
+import Send from './forms/Send';
 
 import './index.css';
 
@@ -45,6 +46,7 @@ ReactDOM.render(
     <Route path="/modal" component={Modals} />
     <Route path="/counter" component={Counter} />
     <Route path="/mortgage" component={Mortgage} />
+    <Route path="/send" component={Send} />
     <Route path="/styled" component={Form} />
     <Route path="/antd" component={Antd} />
   </BrowserRouter>,

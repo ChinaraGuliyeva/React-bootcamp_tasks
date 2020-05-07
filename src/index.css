@@ -257,3 +257,23 @@ table{
     margin: 20px;
     border: 1px solid black;
 }
+
+.mortgage{
+    padding: 20px;
+    width: 300px;
+}
+
+.mortgage-input-container{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mortgage-last{
+    margin: 0 0 0 22px;
+}
+
+.send-input-container{
+    display: flex;
+    justify-content: space-between;
+}

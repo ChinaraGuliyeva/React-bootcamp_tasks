@@ -15,6 +15,7 @@ class Navigation extends Component{
             <NavLink className="nav-button" to="/counter">Counter</NavLink>
             <NavLink className="nav-button" to="/Brotherhood">LoR</NavLink>
             <NavLink className="nav-button" to="/mortgage">Mortgage</NavLink>
+            <NavLink className="nav-button" to="/send">Send</NavLink>
             <NavLink className="nav-button" to="/styled">Styled</NavLink>
             <NavLink className="nav-button" to="/antd">Antd</NavLink>
         </nav>
