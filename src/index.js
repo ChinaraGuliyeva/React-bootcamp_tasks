@@ -19,6 +19,7 @@ import Form from './ready/Form';
 import Mortgage from "./forms/Mortgage";
 import Antd from './ready/Antd';
 import Send from './forms/Send';
+import BankCard from './forms/BankCard';
 
 import './index.css';
 
@@ -48,6 +49,7 @@ ReactDOM.render(
     <Route path="/mortgage" component={Mortgage} />
     <Route path="/send" component={Send} />
     <Route path="/styled" component={Form} />
+    <Route path="/bankcard" component={BankCard} />
     <Route path="/antd" component={Antd} />
   </BrowserRouter>,
   document.getElementById('root')

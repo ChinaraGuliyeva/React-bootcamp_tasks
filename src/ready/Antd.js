@@ -16,23 +16,25 @@ class Antd extends Component {
         ]
     }
     changeValue = (event) =>{
-        console.log(event.target);
-        //this.setState({value: event.target.value})
-        console.log(1)
-    };
+        this.setState({value: event.target.value})
+    }
+    valueReader = () =>{
+        console.log(this.state.value)
+    }
     render() {
         return <div>
-                <Select className="murashki" value={this.state.value} onSelect={this.changeValue}>
+                <Select className="murashki" value={this.state.value} onChange={this.changeValue}>
                     <Option value="Italy">Италия</Option>
                     <Option value="France">Франция</Option>
                     <Option value="Spain">Испания</Option>
                     <Option value="Germany">Германия</Option>
                 </Select>
-                <Select className="murashki" defaultValue="Италия" >
-                    <Option value="Italy">Италия</Option>
-                    <Option value="France">Франция</Option>
-                    <Option value="Spain">Испания</Option>
-                    <Option value="Germany">Германия</Option>
+                {this.valueReader()}
+                <Select className="murashki" defaultValue="" >
+                    <Option value=""></Option>
+                    <Option value=""></Option>
+                    <Option value=""></Option>
+                    <Option value=""></Option>
                 </Select>
                 </div>
     }

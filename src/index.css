@@ -260,7 +260,8 @@ table{
 
 .mortgage{
     padding: 20px;
-    width: 300px;
+    width: 330px;
+    position: relative;
 }
 
 .mortgage-input-container{
@@ -276,4 +277,37 @@ table{
 .send-input-container{
     display: flex;
     justify-content: space-between;
+}
+
+.show3{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #A2A2A9;
+    padding: 10px;
+    width: 300px;
+    height: 70px;
+    line-height: 50px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 90px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]:hover,
+  input[type="number"]:focus {
+    -moz-appearance: number-input;
+  }
+
+.datInput{
+    width: 175px;
 }
