@@ -22,39 +22,29 @@ class Antd extends Component {
     valueReader = () => {
         if (this.state.value == "italy") {
             return (<Select className="murashki">
-                <Option value={this.state.italy[0]}>{this.state.italy[0]}</Option>
-                <Option value={this.state.italy[1]}>{this.state.italy[1]}</Option>
-                <Option value={this.state.italy[2]}>{this.state.italy[2]}</Option>
-                <Option value={this.state.italy[3]}>{this.state.italy[3]}</Option>
+                {this.state.italy.map(element =>{return <Option value={element}>{element}</Option>})}
             </Select>)
         }
         if (this.state.value == "france") {
             return (<Select className="murashki">
-                <Option value={this.state.france[0]}>{this.state.france[0]}</Option>
-                <Option value={this.state.france[1]}>{this.state.france[1]}</Option>
-                <Option value={this.state.france[2]}>{this.state.france[2]}</Option>
-                <Option value={this.state.france[3]}>{this.state.france[3]}</Option>
+                {this.state.france.map(element =>{return <Option value={element}>{element}</Option>})}
             </Select>)
         }
         if (this.state.value == "germany") {
             return (<Select className="murashki">
-                <Option value={this.state.germany[0]}>{this.state.germany[0]}</Option>
-                <Option value={this.state.germany[1]}>{this.state.germany[1]}</Option>
-                <Option value={this.state.germany[2]}>{this.state.germany[2]}</Option>
+                {this.state.germany.map(element =>{return <Option value={element}>{element}</Option>})}
             </Select>)
         }
         if (this.state.value == "spain") {
             return (<Select className="murashki">
-                <Option value={this.state.spain[0]}>{this.state.spain[0]}</Option>
-                <Option value={this.state.spain[1]}>{this.state.spain[1]}</Option>
-                <Option value={this.state.spain[2]}>{this.state.spain[2]}</Option>
-                <Option value={this.state.spain[3]}>{this.state.spain[3]}</Option>
+                {this.state.spain.map(element =>{return <Option value={element}>{element}</Option>})}
             </Select>)
         }
         else {
             return (''
             )
         }
+    
     }
     render() {
         return <div>
