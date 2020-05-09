@@ -256,6 +256,7 @@ table{
 .murashki{
     margin: 20px;
     border: 1px solid black;
+    width: 110px;
 }
 
 .mortgage{
@@ -294,6 +295,24 @@ table{
     top: 90px;
 }
 
+
+.datInput{
+    width: 175px;
+}
+
+#days{
+    width: 110px;
+    border: 1px solid black;
+    margin: 0 0 0 35px;
+}
+
+.antd-days{
+    margin: 10px 20px;
+    display: flex;
+    width: 300px;
+}
+
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -308,6 +327,7 @@ input[type="number"] {
     -moz-appearance: number-input;
   }
 
-.datInput{
-    width: 175px;
+.antdButton{
+    border-radius: 0px;
+    margin: 20px 70px;
 }
