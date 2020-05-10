@@ -331,3 +331,11 @@ input[type="number"] {
     border-radius: 0px;
     margin: 20px 70px;
 }
+
+.searchName{
+    margin: 0 20px;
+}
+
+#search{
+    margin: 20px;
+}
